@@ -1,0 +1,92 @@
+/* Filters container */
+.filters {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect on the filter container */
+.filters:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Filter options (select boxes) */
+.filters select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect on the select boxes */
+.filters select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Hover effect on the select boxes */
+.filters select:hover {
+    border-color: #4CAF50;
+}
+
+/* Label style for each filter */
+.filters label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    display: block;
+}
+
+/* Add space between label and select */
+.filters .filter-item {
+    margin-bottom: 20px;
+}
+
+/* Option style inside select */
+.filters select option {
+    padding: 10px;
+}
+
+/* Button style (if added in the future) */
+.filters button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filters {
+        padding: 15px;
+    }
+
+    .filters select {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .filters {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}

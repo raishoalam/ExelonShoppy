@@ -1,0 +1,145 @@
+.cart {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item-details h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.remove-item {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #c0392b;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        width: 120px;  /* Slightly smaller images for smaller screens */
+    }
+
+    .cart-item-details h4 {
+        font-size: 16px;  /* Adjusting text size for smaller screens */
+    }
+
+    .remove-item {
+        width: 100%;  /* Make the Remove button full-width */
+        margin-top: 10px;
+    }
+
+    .cart-summary {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .checkout-btn {
+        width: 100%;  /* Full-width button for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-item img {
+        width: 100px;  /* Further reduce image size */
+    }
+
+    .cart-item-details h4 {
+        font-size: 14px;  /* Reduce heading font size on very small screens */
+    }
+
+    .cart-item-details p {
+        font-size: 14px;  /* Adjust text size for mobile */
+    }
+
+    .quantity input {
+        width: 50px;  /* Smaller input field on small screens */
+    }
+
+    .checkout-btn {
+        padding: 12px 15px;
+        font-size: 14px;  /* Adjust font size for small screens */
+    }
+}

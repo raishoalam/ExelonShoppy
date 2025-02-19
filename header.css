@@ -1,0 +1,88 @@
+/* header.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 20px;
+    color: white;
+    position: fixed; /* Ensure the header stays at the top */
+    top: 0; /* Make sure it stays at the top of the page */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow below header */
+}
+.nav-heading{
+    color: orange;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Add a margin-top to the body content to avoid overlap with fixed header */
+body {
+    margin-top: 70px; /* Adjust this if your header's height is different */
+}
